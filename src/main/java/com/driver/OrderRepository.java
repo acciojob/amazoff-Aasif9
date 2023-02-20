@@ -160,10 +160,10 @@ public class OrderRepository {
     }
 
     public Integer getOrderCountByPartnerId(String partnerId) {
-        Integer orderCount = 0;
+        Integer orderCnt = 0;
         if(deliveryPartnerHashMap.containsKey(partnerId)){
-            orderCount = deliveryPartnerHashMap.get(partnerId).getNumberOfOrders();
+            orderCnt = deliveryPartnerHashMap.get(partnerId).getNumberOfOrders();
         }
-        return orderCount;
+        return orderCnt;
     }
 }
